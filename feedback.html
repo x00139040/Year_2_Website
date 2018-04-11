@@ -6,18 +6,120 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        
  </head>
+
  
- <body>
- 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	    <span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	  </button>
-	  <a class="navbar-brand" href="#">
+<meta charset="UTF-8">
+<title>Feedback</title>
+
+
+<body>
+    <!-- start of nav section -->
+   <nav class="navbar navbar-inverse">
+            <!-- nav header/ branding -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">The Crown</a>
+            </div>
+            <!-- List containing nav links -->
+            <ul class="nav navbar-nav">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li class="active">Order<a href="Order.html"></a></li>
+            </ul>
+	<ul class="nav navbar-nav navbar-right">
+      <li><a href="#"> <li class="active"> <span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    </ul>
+</nav>
+
+
+<div class="container">
+  <div class="imagebg"></div>
+  <div class="row" style="margin-top: 50px">
+    <div class="form-container">
+	  <h2><b>Feedback</b></h2>
+	  <p>    We would like to hear your feedback: </p>
+	  <form role="form" method="post" id="reused_form">
+	    <div class="row">
+		  <div class="form-group">
+		    <label>How do you rate your overall experience?</label>
+			<p>
+			   <label class="burger-inline">
+			    <input type="radio" name="experience" id="burger-experience" value="good">
+				Good
+			   </label>
+			   
+			   <label class="burger-inline">
+			    <input type="radio" name="experience" id="burger-experience" value="average">
+				Average
+			   </label>
+			   
+			   <label class="burger-inline">
+			    <input type="radio" name="experience" id="burger-experience" value="bad">
+			   Bad
+			   </label>
+			</p>
+	    </div>
+	</div>
+	
+	
+	<div class="row">
+	    
+	    <div class="form-group">
+		  <label for="comments"> Comments:</label>
+		  <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments.." maxlength="6000" rows="7"></textarea>
+		</div>
+	</div>
+
+    
+    <div class="row">
+        <div class="col-6 form-group">
+            <label for="name"> Your Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+    
+    <div class="row">
+        <div class="col-6 form-group">
+		    <label for="email"> Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+    </div>
+	
+	
+	<div class="row">
+	    <div class="form-group">
+		  <button type="submit" class="btn btn-lg btn-warning btn-block"> Post </button>
+		</div>
+	</div>
+</form>
+
+<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your feedback successfully!</h3> </div>
+<div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+
+  <div class="row">
+    <div class="contact-us">
+  <h2><b>Contact Us</b></h2>
+  <h4><b>General Conatact</b></h4>
+  <p>Phone: 111-222-333</p>
+  <p>Email: thecrown@gmail.com</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+			     
+
+
+
+
+
+
